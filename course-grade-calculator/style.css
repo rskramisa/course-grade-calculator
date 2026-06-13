@@ -1,0 +1,94 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #024AA2 !important; /* Light Salmon Background */
+    min-height: 100vh;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+/* Custom internal shadow element for dashboard view boxes */
+.shadow-inner {
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+/* Form input hover and focusing actions layout */
+input.form-control:focus {
+    border-color: #024AA2 !important;
+    box-shadow: 0 0 0 0.25rem rgba(128, 198, 230, 0.25) !important;
+    outline: 0 !important;
+}
+
+input.form-control:hover {
+    border-color: #5DA5FD !important; 
+}
+
+/* Text transform helper values */
+.uppercase {
+    text-transform: uppercase;
+}
+
+.tracking-wider {
+    letter-spacing: 0.05em;
+}
+
+.fw-black {
+    font-weight: 900;
+}
+
+/* Table layout adjustments */
+.blueprint-table th {
+    font-size: 0.85rem;
+    letter-spacing: 0.03em;
+}
+
+/* Quick entry animation for results view wrapper */
+.animate-fade-in {
+    animation: fadeIn 0.4s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* FOOTER STYLINGS */
+.footer-links {
+    color:white;
+}
+
+p a {
+    text-decoration: none !important; /* This removes the weird underline completely */
+    display: inline-block;            /* Keeps the layout clean and prevents trailing line artifacts */
+    font-size: 1.1rem;                
+    transition: color 0.2s ease-in-out;
+}
+
+/* When hovering over the GitHub link, it turns light blue */
+.footer-links a:hover .bi-github {
+    color: #5DA5FD !important;
+}
+
+/* When hovering over the LinkedIn link, it turns light blue */
+.footer-links a:hover .bi-linkedin {
+    color: #5DA5FD !important;
+}
+
+/* When hovering over the Portfolio link, it turns light blue */
+.footer-links a:hover .bi-briefcase-fill {
+    color: #5DA5FD !important;
+}
+
+.closing-remarks {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
